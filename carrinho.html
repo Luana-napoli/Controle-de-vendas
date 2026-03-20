@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link 
+rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="shortcut icon" href="cores/icone.ico" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div id="menu">
+        <a href="index.html"><img src="logo.png" alt="" height="100"></a>
+     
+        <div> <a href="produtos.html"><b> Produtos</b></a></div>
+        <div> <a href="clientes.html"><b>Clientes</b></a></div>
+        <div> <a href="vendas.html"><b>Vendas</b></a></div>
+        <div> <a href="carrinho.html"><img src="carrinho.png" alt=""></a></div>
+   
+    </div>
+
+    <br><br><br> <br><br><br>
+<h1 class="hero_subtitle">PRODUTOS ADICIONADOS AO CARRINHO</h1>
+
+<div id="margem" class="container">
+
+  <div class="card">
+<table class="table col" >
+   
+  <thead>
+    <tr>
+      <th scope="col" id="titulo">Codigo</th>
+      <th scope="col" id="titulo">Nome</th>
+      <th scope="col" id="titulo">Preco</th>
+      <th scope="col" id="titulo">Imagem</th>
+      <th scope="col" id="titulo">Quantidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">1</th>
+      <td>Produto 1</td>
+      <td>100</td>
+      <td><img src="logo.png" width="50px" alt=""></td>
+  <td> 
+    <div id="pagina">
+    <button type="button" class="btn btn-light "><img src="remover.png" alt=""></button>
+    <p class="">1</p>
+    <button type="button" class="btn btn-light "><img src="adicionar.png" alt=""></button>
+</div>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+<br><br>
+<label for="exampleDataList" class="form-label">Escolha o cliente</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="Cliente 1">
+  <option value="Cliente 2">
+  <option value="Cliente 3">
+  <option value="Cliente 4">
+  <option value="Cliente 5">
+</datalist>
+<br><br>
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalFinalizar">Finalizar venda   <img src="carrinho.png" alt=""> </button>
+
+<div class="modal fade" id="ModalFinalizar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="ModalFinalizarLabel"><img src="logo.png" width="50px" alt=""></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Deseja mesmo finalizar a venda?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+        <button type="button" class="btn btn-light"><a href="index.html">Sim, finalizar</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
