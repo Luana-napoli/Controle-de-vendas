@@ -24,15 +24,23 @@ rel="stylesheet" type="text/css" href="style.css">
   />
 </head>
 <body>
-    <div id="menu">
-        <a href="index.html"><img src="logo.png" alt="" height="100"></a>
-     
-        <div> <a href="produtos.html"><b> Produtos</b></a></div>
-        <div> <a href="clientes.html"><b>Clientes</b></a></div>
-        <div> <a href="vendas.html"><b>Vendas</b></a></div>
-        <div> <a href="carrinho.html"><img src="carrinho.png" alt=""></a></div>
+   <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" >
+     <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="logo.png" alt="" height="80"></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto text-center">
+       <div> <a  class="nav-link active" href="produtos.html"><b class="fonteMenu"> Produtos</b></a></div>
+        <div> <a class="nav-link active" href="clientes.html"><b class="fonteMenu">Clientes</b></a></div>
+        <div> <a class="nav-link active" href="vendas.html"><b class="fonteMenu">Vendas</b></a></div>
+        <div> <a class="nav-link active" href="carrinho.html" class="fonteMenu"><img src="carrinho.png" alt=""></a></div>
+</div>
+      </div>
 
     </div>
+</nav>
      <br><br><br> <br><br><br>
 <h1 class="hero_subtitle"> PRODUTOS CADASTRADOS</h1>
 <div class="container">
@@ -40,7 +48,10 @@ rel="stylesheet" type="text/css" href="style.css">
                 <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search"/>
         <button type="button" class="btn btn-light espaco3" type="submit">Pesquisar</button>
-        <button type="button" class="btn btn-light espaco3"  data-bs-toggle="modal" data-bs-target="#ModalEditar"> <img src="editar.png" alt=""> </button>
+    </form>
+    <br>
+    <form class="d-flex">
+         <button type="button" class="btn btn-light espaco3"  data-bs-toggle="modal" data-bs-target="#ModalEditar"> <img src="editar.png" alt=""> </button>
         <button type="button" class="btn btn-light espaco3"  data-bs-toggle="modal" data-bs-target="#ModalExcluir"><img src="excluir.png" alt=""></button>
         <button type="button" class="btn btn-light espaco3" data-bs-toggle="modal" data-bs-target="#ModalAdicionar"><img src="adicionar.png" alt="" > </button>
     </form>

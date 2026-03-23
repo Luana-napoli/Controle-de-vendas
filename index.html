@@ -25,20 +25,27 @@ rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <div id="menu">
-        <a href="index.html"><img src="logo.png" alt="" height="100"></a>
-     
-        <div> <a href="produtos.html"><b> Produtos</b></a></div>
-        <div> <a href="clientes.html"><b>Clientes</b></a></div>
-        <div> <a href="vendas.html"><b>Vendas</b></a></div>
-        <div> <a href="carrinho.html"><img src="carrinho.png" alt=""></a></div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" >
+     <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="logo.png" alt="" height="80"></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto text-center">
+       <div> <a  class="nav-link active" href="produtos.html"><b class="fonteMenu"> Produtos</b></a></div>
+        <div> <a class="nav-link active" href="clientes.html"><b class="fonteMenu">Clientes</b></a></div>
+        <div> <a class="nav-link active" href="vendas.html"><b class="fonteMenu">Vendas</b></a></div>
+        <div> <a class="nav-link active" href="carrinho.html" class="fonteMenu"><img src="carrinho.png" alt=""></a></div>
+</div>
+      </div>
 
     </div>
-
+</nav>
     <br><br><br> <br><br><br>
 <h1 class="hero_subtitle"> ÚLTIMAS VENDAS</h1>
-
-<div id="margem" class="card row">
+<div class="container">
+<div id="margem" class="card row table-responsive">
 <table class="table col" >
     
   <thead>
@@ -106,6 +113,7 @@ rel="stylesheet" type="text/css" href="style.css">
     <p class="card-text">Valor unitário: 100</p>
     <p class="card-text">Unidades Vendidas: 100</p>
   </div>
+</div>
 </div>
 </div>
 </div>
